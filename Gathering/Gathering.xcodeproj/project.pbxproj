@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D21B81782C9D66FD00B9664E /* VMGatherAW.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B81772C9D66FD00B9664E /* VMGatherAW.swift */; };
+		D21B817B2C9D824F00B9664E /* ViewGathering.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B817A2C9D824F00B9664E /* ViewGathering.swift */; };
+		D21B817D2C9D825D00B9664E /* ViewExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B817C2C9D825D00B9664E /* ViewExtractor.swift */; };
+		D21B817F2C9DBB2A00B9664E /* ViewClassSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B817E2C9DBB2A00B9664E /* ViewClassSelection.swift */; };
+		D21B81832C9DC35F00B9664E /* ViewExtractorSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B81822C9DC35F00B9664E /* ViewExtractorSequence.swift */; };
+		D21B81852C9DC38D00B9664E /* ViewRecap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B81842C9DC38D00B9664E /* ViewRecap.swift */; };
+		D233F5A92C9C687B00242D0E /* Exporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D233F5A82C9C687B00242D0E /* Exporter.swift */; };
+		D23D49512CA00FEE0003E210 /* Extractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D49502CA00FEE0003E210 /* Extractor.swift */; };
+		D23D49582CA0104A0003E210 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D49562CA0104A0003E210 /* Signal.swift */; };
+		D23D49592CA0104A0003E210 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D49572CA0104A0003E210 /* Sample.swift */; };
+		D23D495B2CA0172F0003E210 /* ViewModelExtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D495A2CA0172F0003E210 /* ViewModelExtraction.swift */; };
+		D24479942CA7086600F200F9 /* ViewGatherIphone.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24479932CA7086600F200F9 /* ViewGatherIphone.swift */; };
+		D24479962CA7087E00F200F9 /* ViewSelectDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24479952CA7087E00F200F9 /* ViewSelectDevice.swift */; };
+		D24479982CA7096000F200F9 /* VMGatherIphone.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24479972CA7096000F200F9 /* VMGatherIphone.swift */; };
+		D24479992CA709DE00F200F9 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A772322C9B0E9100CA9111 /* MotionManager.swift */; };
+		D244799B2CA70E8100F200F9 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244799A2CA70E8100F200F9 /* MotionManager.swift */; };
+		D27C1FFA2CA16A5E00B8A230 /* StandardScaler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27C1FF92CA16A5E00B8A230 /* StandardScaler.swift */; };
+		D2A7722B2C9B098200CA9111 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A7722A2C9B098200CA9111 /* WatchSessionManager.swift */; };
+		D2A772302C9B0CA800CA9111 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A7722F2C9B0CA800CA9111 /* WatchSessionManager.swift */; };
+		D2A772362C9B11F700CA9111 /* MotionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A772352C9B11F700CA9111 /* MotionViewModel.swift */; };
+		D2E677B02C99C682006F9F2D /* GatheringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E677AF2C99C682006F9F2D /* GatheringApp.swift */; };
+		D2E677B22C99C682006F9F2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E677B12C99C682006F9F2D /* ContentView.swift */; };
+		D2E677B42C99C684006F9F2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2E677B32C99C684006F9F2D /* Assets.xcassets */; };
+		D2E677B72C99C684006F9F2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2E677B62C99C684006F9F2D /* Preview Assets.xcassets */; };
+		D2E677BD2C99C684006F9F2D /* Gathering Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D2E677BC2C99C684006F9F2D /* Gathering Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D2E677C22C99C684006F9F2D /* GatheringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E677C12C99C684006F9F2D /* GatheringApp.swift */; };
+		D2E677C42C99C684006F9F2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E677C32C99C684006F9F2D /* ContentView.swift */; };
+		D2E677C62C99C685006F9F2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2E677C52C99C685006F9F2D /* Assets.xcassets */; };
+		D2E677C92C99C685006F9F2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2E677C82C99C685006F9F2D /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2E677BE2C99C684006F9F2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2E677A42C99C682006F9F2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2E677BB2C99C684006F9F2D;
+			remoteInfo = "Gathering Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D2E677CF2C99C685006F9F2D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D2E677BD2C99C684006F9F2D /* Gathering Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D21B81772C9D66FD00B9664E /* VMGatherAW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMGatherAW.swift; sourceTree = "<group>"; };
+		D21B817A2C9D824F00B9664E /* ViewGathering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewGathering.swift; sourceTree = "<group>"; };
+		D21B817C2C9D825D00B9664E /* ViewExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtractor.swift; sourceTree = "<group>"; };
+		D21B817E2C9DBB2A00B9664E /* ViewClassSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewClassSelection.swift; sourceTree = "<group>"; };
+		D21B81822C9DC35F00B9664E /* ViewExtractorSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtractorSequence.swift; sourceTree = "<group>"; };
+		D21B81842C9DC38D00B9664E /* ViewRecap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRecap.swift; sourceTree = "<group>"; };
+		D233F5A82C9C687B00242D0E /* Exporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exporter.swift; sourceTree = "<group>"; };
+		D23D49502CA00FEE0003E210 /* Extractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extractor.swift; sourceTree = "<group>"; };
+		D23D49562CA0104A0003E210 /* Signal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
+		D23D49572CA0104A0003E210 /* Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
+		D23D495A2CA0172F0003E210 /* ViewModelExtraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelExtraction.swift; sourceTree = "<group>"; };
+		D24479932CA7086600F200F9 /* ViewGatherIphone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewGatherIphone.swift; sourceTree = "<group>"; };
+		D24479952CA7087E00F200F9 /* ViewSelectDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSelectDevice.swift; sourceTree = "<group>"; };
+		D24479972CA7096000F200F9 /* VMGatherIphone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMGatherIphone.swift; sourceTree = "<group>"; };
+		D244799A2CA70E8100F200F9 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		D27C1FF92CA16A5E00B8A230 /* StandardScaler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardScaler.swift; sourceTree = "<group>"; };
+		D2A7722A2C9B098200CA9111 /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		D2A7722F2C9B0CA800CA9111 /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		D2A772322C9B0E9100CA9111 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		D2A772352C9B11F700CA9111 /* MotionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionViewModel.swift; sourceTree = "<group>"; };
+		D2E677AC2C99C682006F9F2D /* Gathering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gathering.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2E677AF2C99C682006F9F2D /* GatheringApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatheringApp.swift; sourceTree = "<group>"; };
+		D2E677B12C99C682006F9F2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D2E677B32C99C684006F9F2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2E677B62C99C684006F9F2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D2E677BC2C99C684006F9F2D /* Gathering Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gathering Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2E677C12C99C684006F9F2D /* GatheringApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatheringApp.swift; sourceTree = "<group>"; };
+		D2E677C32C99C684006F9F2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D2E677C52C99C685006F9F2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2E677C82C99C685006F9F2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2E677A92C99C682006F9F2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2E677B92C99C684006F9F2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D244799C2CA715CE00F200F9 /* Gathering */ = {
+			isa = PBXGroup;
+			children = (
+				D24479A02CA7161C00F200F9 /* Model */,
+				D244799F2CA7161500F200F9 /* ViewModel */,
+				D244799E2CA7160F00F200F9 /* View */,
+			);
+			path = Gathering;
+			sourceTree = "<group>";
+		};
+		D244799D2CA7160800F200F9 /* Extraction */ = {
+			isa = PBXGroup;
+			children = (
+				D24479A32CA7166A00F200F9 /* Model */,
+				D24479A22CA7166300F200F9 /* ViewModel */,
+				D24479A12CA7165700F200F9 /* View */,
+			);
+			path = Extraction;
+			sourceTree = "<group>";
+		};
+		D244799E2CA7160F00F200F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D21B817A2C9D824F00B9664E /* ViewGathering.swift */,
+				D24479932CA7086600F200F9 /* ViewGatherIphone.swift */,
+				D24479952CA7087E00F200F9 /* ViewSelectDevice.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D244799F2CA7161500F200F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D21B81772C9D66FD00B9664E /* VMGatherAW.swift */,
+				D24479972CA7096000F200F9 /* VMGatherIphone.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D24479A02CA7161C00F200F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2A772322C9B0E9100CA9111 /* MotionManager.swift */,
+				D2A7722F2C9B0CA800CA9111 /* WatchSessionManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D24479A12CA7165700F200F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D21B817E2C9DBB2A00B9664E /* ViewClassSelection.swift */,
+				D21B817C2C9D825D00B9664E /* ViewExtractor.swift */,
+				D21B81822C9DC35F00B9664E /* ViewExtractorSequence.swift */,
+				D21B81842C9DC38D00B9664E /* ViewRecap.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D24479A22CA7166300F200F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D23D49502CA00FEE0003E210 /* Extractor.swift */,
+				D23D495A2CA0172F0003E210 /* ViewModelExtraction.swift */,
+				D27C1FF92CA16A5E00B8A230 /* StandardScaler.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D24479A32CA7166A00F200F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D23D49572CA0104A0003E210 /* Sample.swift */,
+				D23D49562CA0104A0003E210 /* Signal.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2A772312C9B0E8100CA9111 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D2A772352C9B11F700CA9111 /* MotionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D2A772342C9B114700CA9111 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2A7722A2C9B098200CA9111 /* WatchSessionManager.swift */,
+				D244799A2CA70E8100F200F9 /* MotionManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2E677A32C99C682006F9F2D = {
+			isa = PBXGroup;
+			children = (
+				D2E677AE2C99C682006F9F2D /* Gathering */,
+				D2E677C02C99C684006F9F2D /* Gathering Watch App */,
+				D2E677AD2C99C682006F9F2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2E677AD2C99C682006F9F2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2E677AC2C99C682006F9F2D /* Gathering.app */,
+				D2E677BC2C99C684006F9F2D /* Gathering Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2E677AE2C99C682006F9F2D /* Gathering */ = {
+			isa = PBXGroup;
+			children = (
+				D233F5A82C9C687B00242D0E /* Exporter.swift */,
+				D244799D2CA7160800F200F9 /* Extraction */,
+				D244799C2CA715CE00F200F9 /* Gathering */,
+				D2E677AF2C99C682006F9F2D /* GatheringApp.swift */,
+				D2E677B12C99C682006F9F2D /* ContentView.swift */,
+				D2E677B32C99C684006F9F2D /* Assets.xcassets */,
+				D2E677B52C99C684006F9F2D /* Preview Content */,
+			);
+			path = Gathering;
+			sourceTree = "<group>";
+		};
+		D2E677B52C99C684006F9F2D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D2E677B62C99C684006F9F2D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D2E677C02C99C684006F9F2D /* Gathering Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				D2A772342C9B114700CA9111 /* Model */,
+				D2A772312C9B0E8100CA9111 /* ViewModel */,
+				D2E677C12C99C684006F9F2D /* GatheringApp.swift */,
+				D2E677C32C99C684006F9F2D /* ContentView.swift */,
+				D2E677C52C99C685006F9F2D /* Assets.xcassets */,
+				D2E677C72C99C685006F9F2D /* Preview Content */,
+			);
+			path = "Gathering Watch App";
+			sourceTree = "<group>";
+		};
+		D2E677C72C99C685006F9F2D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D2E677C82C99C685006F9F2D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2E677AB2C99C682006F9F2D /* Gathering */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2E677D02C99C685006F9F2D /* Build configuration list for PBXNativeTarget "Gathering" */;
+			buildPhases = (
+				D2E677A82C99C682006F9F2D /* Sources */,
+				D2E677A92C99C682006F9F2D /* Frameworks */,
+				D2E677AA2C99C682006F9F2D /* Resources */,
+				D2E677CF2C99C685006F9F2D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2E677BF2C99C684006F9F2D /* PBXTargetDependency */,
+			);
+			name = Gathering;
+			productName = Gathering;
+			productReference = D2E677AC2C99C682006F9F2D /* Gathering.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2E677BB2C99C684006F9F2D /* Gathering Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2E677CC2C99C685006F9F2D /* Build configuration list for PBXNativeTarget "Gathering Watch App" */;
+			buildPhases = (
+				D2E677B82C99C684006F9F2D /* Sources */,
+				D2E677B92C99C684006F9F2D /* Frameworks */,
+				D2E677BA2C99C684006F9F2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gathering Watch App";
+			productName = "Gathering Watch App";
+			productReference = D2E677BC2C99C684006F9F2D /* Gathering Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2E677A42C99C682006F9F2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					D2E677AB2C99C682006F9F2D = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					D2E677BB2C99C684006F9F2D = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = D2E677A72C99C682006F9F2D /* Build configuration list for PBXProject "Gathering" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2E677A32C99C682006F9F2D;
+			productRefGroup = D2E677AD2C99C682006F9F2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2E677AB2C99C682006F9F2D /* Gathering */,
+				D2E677BB2C99C684006F9F2D /* Gathering Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2E677AA2C99C682006F9F2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2E677B72C99C684006F9F2D /* Preview Assets.xcassets in Resources */,
+				D2E677B42C99C684006F9F2D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2E677BA2C99C684006F9F2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2E677C92C99C685006F9F2D /* Preview Assets.xcassets in Resources */,
+				D2E677C62C99C685006F9F2D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2E677A82C99C682006F9F2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D21B81782C9D66FD00B9664E /* VMGatherAW.swift in Sources */,
+				D23D49582CA0104A0003E210 /* Signal.swift in Sources */,
+				D2A772302C9B0CA800CA9111 /* WatchSessionManager.swift in Sources */,
+				D24479982CA7096000F200F9 /* VMGatherIphone.swift in Sources */,
+				D21B817F2C9DBB2A00B9664E /* ViewClassSelection.swift in Sources */,
+				D21B817B2C9D824F00B9664E /* ViewGathering.swift in Sources */,
+				D23D495B2CA0172F0003E210 /* ViewModelExtraction.swift in Sources */,
+				D21B81852C9DC38D00B9664E /* ViewRecap.swift in Sources */,
+				D2E677B22C99C682006F9F2D /* ContentView.swift in Sources */,
+				D233F5A92C9C687B00242D0E /* Exporter.swift in Sources */,
+				D2E677B02C99C682006F9F2D /* GatheringApp.swift in Sources */,
+				D24479962CA7087E00F200F9 /* ViewSelectDevice.swift in Sources */,
+				D24479942CA7086600F200F9 /* ViewGatherIphone.swift in Sources */,
+				D21B817D2C9D825D00B9664E /* ViewExtractor.swift in Sources */,
+				D27C1FFA2CA16A5E00B8A230 /* StandardScaler.swift in Sources */,
+				D21B81832C9DC35F00B9664E /* ViewExtractorSequence.swift in Sources */,
+				D24479992CA709DE00F200F9 /* MotionManager.swift in Sources */,
+				D23D49592CA0104A0003E210 /* Sample.swift in Sources */,
+				D23D49512CA00FEE0003E210 /* Extractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2E677B82C99C684006F9F2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A7722B2C9B098200CA9111 /* WatchSessionManager.swift in Sources */,
+				D244799B2CA70E8100F200F9 /* MotionManager.swift in Sources */,
+				D2A772362C9B11F700CA9111 /* MotionViewModel.swift in Sources */,
+				D2E677C42C99C684006F9F2D /* ContentView.swift in Sources */,
+				D2E677C22C99C684006F9F2D /* GatheringApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2E677BF2C99C684006F9F2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2E677BB2C99C684006F9F2D /* Gathering Watch App */;
+			targetProxy = D2E677BE2C99C684006F9F2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D2E677CA2C99C685006F9F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2E677CB2C99C685006F9F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		D2E677CD2C99C685006F9F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Gathering Watch App/Gathering Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gathering Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 9XRA23Q44P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_CFBundleDisplayName = Gathering;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = main.Gathering;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = main.Gathering.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		D2E677CE2C99C685006F9F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Gathering Watch App/Gathering Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gathering Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 9XRA23Q44P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_CFBundleDisplayName = Gathering;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = main.Gathering;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = main.Gathering.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		D2E677D12C99C685006F9F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Gathering/Gathering.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gathering/Preview Content\"";
+				DEVELOPMENT_TEAM = 9XRA23Q44P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Gathering/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Gathering;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = main.Gathering;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2E677D22C99C685006F9F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Gathering/Gathering.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gathering/Preview Content\"";
+				DEVELOPMENT_TEAM = 9XRA23Q44P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Gathering/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Gathering;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = main.Gathering;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2E677A72C99C682006F9F2D /* Build configuration list for PBXProject "Gathering" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2E677CA2C99C685006F9F2D /* Debug */,
+				D2E677CB2C99C685006F9F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2E677CC2C99C685006F9F2D /* Build configuration list for PBXNativeTarget "Gathering Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2E677CD2C99C685006F9F2D /* Debug */,
+				D2E677CE2C99C685006F9F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2E677D02C99C685006F9F2D /* Build configuration list for PBXNativeTarget "Gathering" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2E677D12C99C685006F9F2D /* Debug */,
+				D2E677D22C99C685006F9F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2E677A42C99C682006F9F2D /* Project object */;
+}
